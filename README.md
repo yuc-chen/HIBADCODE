@@ -69,7 +69,7 @@ python main.py
 ```shell script
 # preprocess for the python training dataset
 cd datasets/codesearch
-gdown https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip  
+gdown https://zenodo.org/record/7857872/files/python.zip  
 unzip python.zip
 rm  python.zip
 cd ..
@@ -94,10 +94,9 @@ python vocab_frequency.py
 python select_trigger.py
 ```
 
-### LSTM
+### LSTM and Transformer
+For LSTM and Transformer we follow the [naturalcc](https://github.com/CGCL-codes/naturalcc).
 
-
-### Transformer
 
 ### CodeBERT
 - Fine-tuning
@@ -209,7 +208,7 @@ python -u run_search.py \
 
 - Evaluation
 ```shell
-Similar to the evaluate step in CodeBERT
+# Similar to the evaluate step in CodeBERT
 ```
 
 ## Backdoor Defense
